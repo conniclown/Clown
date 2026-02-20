@@ -1,0 +1,92 @@
+link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+<div class="Ambientacion-BF">
+	                                                                     <span1><em class="fa-solid fa-hands-holding-circle"></em>Ambiente</span1>                                                                   
+	<div class="Historia-BF">
+		                                                                   Aut tenetur adipisci non velit quibusdam ab facere explicabo aut explicabo quaerat sed natus ducimus. Sit nulla cumque nam cumque eligendi non natus suscipit nam voluptatum incidunt aut nostrum reiciendis. Qui minima totam et pariatur aperiam hic alias Quis ut voluptatem tempora eos voluptates enim ut galisum eius et corporis quae. Aut facere numquam vel eligendi aliquid non nobis illo est possimus consequatur qui placeat voluptatem. Aut molestias aliquid et voluptas maxime sit repellendus cumque quo repudiandae quod sed voluptas minima. Et optio enim non enim molestiae aut quam sequi et quibusdam magnam et aperiam iusto ut eveniet iure.                                                                     
+	</div><span2><em class="fas fa-calendar-alt"></em>2026<span3>Verano</span3></span2><span2><em class="fas fa-temperature-low"></em>Temperatura<span3>Alto smog</span3><span3>45° Celsius</span3></span2>
+</div>
+   <style> 
+.Ambientacion-BF {
+    display: flex;
+    background: var(--bs);
+    height: auto;
+    /* border: 4px solid #07070722; */
+    align-items: center;
+}
+
+.Historia-BF {
+    margin: 1%;
+    font-size: 0.95rem;
+    font-family: var(--f4);
+    text-align: justify;
+    column-count: 2;
+    line-height: 1.1em;
+    color: var(--wh);
+    width: 60%;
+    box-sizing: border-box;
+    overflow: hidden;
+    align-items: center;
+    padding: 0px;
+    font-style: italic;
+}
+
+
+.Ambientacion-BF .titulo {
+  position: relative;
+  z-index: 1; /* encima */
+  font-family: var(--ftitle1);
+  color: var(--acc1);
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+}
+
+.Ambientacion-BF span1 {
+   font-family: var(--ftitle1);
+    color: var(--acc1);
+    text-transform: uppercase;
+    /* font-style: italic; */
+    display: block;
+    width: 15%;
+    /* box-sizing: border-box; */
+    margin: 10px;
+    word-wrap: break-word;
+    font-size: 40px;
+    text-align: center;
+   position: relative; /* necesario para ubicar el ::before */
+}
+
+.Ambientacion-BF span2 {
+  text-align: center;
+    display: block;
+    padding: 18px;
+    width: 13%;
+    margin: 1%;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: var(--ftitle1);
+    font-size: 28px;
+    line-height: 1em;
+    color: var(--acc2);
+    box-sizing: border-box;
+
+}  
+
+.Ambientacion-BF span2 .fas {
+    color: var(--acc1);
+    display: block;
+    font-size: 50px;
+    position: relative;
+    left: 11%;
+    margin: 10px;
+}
+
+.Ambientacion-BF span3 {
+  display: block;
+    font-size: 17px;
+    font-family: var(--ftsub);
+    line-height: 1em;
+    color: var(--wh);
+    margin-top: 3px;
+}
+</style>
