@@ -1,0 +1,1446 @@
+<center>
+  <div class="contenedor-categorias">
+  <div class="divider-BF"></div>
+  <!-- BEGIN catrow -->
+  <!-- BEGIN tablehead -->
+  <div id="{catrow.tablehead.ID}" class="categoria">
+    <div class="Titulocategoria-BF"> 
+            <!-- Agrega un botón para ocultar y mostrar los foros de esta categoría -->
+      <div class="cajabuttoncate">
+        <button class="toggleButton" data-categoriaId="{catrow.tablehead.ID}">
+          <i class="fas fa-eye-slash" aria-hidden="true"></i>
+        </button>
+      </div>
+      {catrow.tablehead.L_FORUM}
+    </div>
+    
+    <!-- Contenedor de los foros -->
+    <div id="forosContainer_{catrow.tablehead.ID}" class="forosContainer" style="display: block;">
+      <div class="contenedor-foros">
+        <div class="contenedortabs-bf"></div>
+        <!-- END tablehead -->
+        <!-- BEGIN forumrow -->
+        <div class="foro">
+          <div class="part1-foro">
+            <a href="{catrow.forumrow.U_VIEWFORUM}" class="titulo-foro">{catrow.forumrow.FORUM_NAME}</a>
+          </div>
+          <div class="part2-foro"> 
+            <dl class="icon">
+              <dd class="lastpost">
+                <!-- BEGIN avatar -->
+                <span class="lastpost-avatar">
+                  <div class="marcoforumS"></div>
+                  {catrow.forumrow.avatar.LAST_POST_AVATAR}
+                </span>
+                <!-- END avatar -->
+                <span class="title">
+                  <!-- BEGIN switch_topic_title -->
+                  <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}" class="temarecien">{catrow.forumrow.LATEST_TOPIC_NAME}</a>
+                  <!-- END switch_topic_title -->
+                  <div class="infopost">
+                    {catrow.forumrow.USER_LAST_POST}
+                  </div>
+                </span>
+              </dd> 
+              <div class="staticpost">
+                <dd class="topics">{catrow.forumrow.TOPICS} <dfn>Topics</dfn></dd>
+                <dd class="posts">{catrow.forumrow.POSTS} <dfn>Post</dfn></dd>
+              </div>
+            </dl>
+          </div>
+          <div class="part3-foro"> 
+            <dl class="icon">
+              <dd class="dterm">{catrow.forumrow.FORUM_DESC}
+                <!-- BEGIN switch_moderators_links -->
+                {catrow.forumrow.switch_moderators_links.L_MODERATOR}{catrow.forumrow.switch_moderators_links.MODERATORS}
+                <!-- END switch_moderators_links -->
+                {catrow.forumrow.L_LINKS}{catrow.forumrow.LINKS}
+                <strong>{forumrow.L_SUBFORUM_STR}</strong> {forumrow.SUBFORUMS}
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <!-- END forumrow -->
+        <!-- BEGIN tablefoot -->
+      </div>
+    </div>
+  </div>
+  <!-- END tablefoot -->
+  <!-- END catrow -->
+  <div class="divider-BF" style="transform: scaleY(-1);"></div>
+  
+  <!-- BEGIN switch_on_index -->
+<div class=" estsmover">
+	<a href="{U_SEARCH_UNANSWERED}" title="Ver mensajes sin respuesta"><i class="fi fi-rr-eye-crossed"></i></a>
+	<a href="{U_TODAY_ACTIVE}" title="Temas activos de hoy"><i class="fi fi-ss-comment-alt"></i></a>
+	<a href="{U_TODAY_POSTERS}" title="Top 20 posteadores del hoy"><i class="fi fi-rr-sparkles"></i></a>
+	<a href="{U_OVERALL_POSTERS}" title="Top 20 posteadores del foro"><i class="fi fi-rr-diploma"></i></a>
+	<!-- BEGIN switch_delete_cookies -->
+	<a href="{switch_on_index.switch_delete_cookies.U_DELETE_COOKIES}" rel="nofollow" title="Suprimir cookies"><i class="fi fi-rr-trash"></i></a>
+	<!-- END switch_delete_cookies -->
+</div>
+<!-- END switch_on_index -->
+  </div>
+</center>
+
+<style>
+.contenedor-categorias {
+    background: var(--n8);
+    border: 1px solid var(--n7);
+    width: 1100px;
+    margin: 0 auto;
+}
+.divider-BF {
+    background-image: var(--cb4);
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  .categoria {
+    background: var(--n9);
+    border: 1px solid var(--n5);
+    margin-bottom: 10px;
+}
+.Titulocategoria-BF {
+    border-bottom: 1px solid var(--n1);
+    background-image: var(--flo1);
+    background: var(--grad1);
+    background-size: cover;
+    height: 70px;
+    text-align: left;
+    color: var(--pr4);
+    line-height: 2.3em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+  
+.Titulocategoria-BF h2 {
+    float: left;
+    font-family: var(--f6);
+    font-size: 2.5rem;
+}
+  .categoria span1 {
+    font-size: 10px;
+    font-family: var(--f4);
+    text-transform: uppercase;
+    color: var(--n6);
+    position: relative;
+    top: -7px;
+}
+.cajabuttoncate {
+    background: var(--n1);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    position: relative;
+    z-index: 1;
+    margin: 1%;
+}
+.cajabuttoncate button {
+    cursor: pointer;
+}
+  /*CATEGORIA 1*/
+#c1 #forosContainer_c1 {
+    max-height: 130px;
+}
+#c1 #forosContainer_c1 .foro {
+    display: flex;
+    height: 130px;
+}
+#c1 .contenedor-foros {
+    height: 130px;
+}
+#c1 .part1-foro {
+    width: 12%;
+    height: 130px;
+    background: var(--n2);
+    border-right: 1px solid var(--n5);
+    font-size: 30px;
+    font-family: var(--f6);
+}
+#c1 .part1-foro .solar-icons,#c1 .part1-foro .fas {
+    display: inline-block;
+    color: var(--n5);
+    background: var(--pr3);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+}
+#c1 .part1-foro a {
+    color: var(--n6);
+    display: block;
+    height: 100%;
+    line-height: 1.5em;
+}
+#c1 .part2-foro {
+    width: 40%;
+}
+#c1 .part2-foro dl {
+    display: flex;
+}
+#c1 dd.lastpost {
+    font-size: 10px;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    width: 70%;
+    position: relative;
+    height: 130px;
+}
+#c1 span.lastpost-avatar {
+    display: block;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    border: 1px solid var(--pr3);
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    margin-top: 6px;
+    position: relative;
+}
+#c1 span.lastpost-avatar img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    filter: grayscale(1);
+}
+#c1 .marcoforumS {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    background-image: var(--fd3);
+    background-size: contain;
+    z-index: 1;
+}
+#c1 a.temarecien {
+    display: block;
+    margin-top: 35px;
+    text-transform: uppercase;
+    font-family: var(--f3);
+    text-decoration: none;
+    color: var(--n4);
+    font-size: 0.8rem;
+    height: 30px;
+    overflow: hidden;
+    width: 160px;
+    font-weight: bold;
+}
+#c1 .infopost {
+    font-size: 10px;
+    color: var(--n6);
+    letter-spacing: 1px;
+    font-family: var(--f4);
+}
+#c1 span.color-groups {
+    float: none;
+    display: inline;
+}
+#c1 .staticpost {
+    background: var(--n7);
+    margin: 6px;
+    height: 110px;
+    overflow: hidden;
+    width: 30%;
+}
+#c1 dd.posts, #c1 dd.topics, #c1 dd.views {
+    font-family: var(--f6);
+    display: block;
+    font-size: 20px;
+    color: var(--pr4);
+    line-height: 1em;
+    margin-top: 13px;
+    text-align: center;
+}
+#c1 dfn {
+    font-style: normal;
+    color: var(--n4);
+    font-family: var(--f4);
+    margin-left: 5px;
+    font-size: 7px;
+    display: block;
+    position: relative;
+    left: -50px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    float: left;
+    text-align: center;
+    width: 120px;
+}
+#c1 .part3-foro {
+    width: 48%;
+}
+#c1 .part3-foro dl {
+    display: flex;
+}
+#c1 .DescripcionForumS {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+#c1 .infodescrip{
+  width:40%;
+      font-size: 10px;
+    color: var(--n6);
+    font-family: var(--f4);
+    text-align: justify;
+    position: relative;
+    height: 110px;
+  }
+#c1 .DescripcionForumS .cajadirect {
+    padding: 10px;
+    background: var(--n7);
+    margin-left: 10px;
+    width: 5%;
+    height: 90px;
+    font-size: 12px;
+  display:grid;
+}
+.cajadirect .solar-icons {
+    color: var(--pr4);
+}
+.cajadirect a {
+    color: var(--n6);
+    font-size: 0.8rem;
+    border-radius: inherit;
+    text-align: center;
+}
+
+#c2 #f2 .cajadirect a {
+  text-align:left;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--n6);
+    margin-top: 4px;
+    position: relative;
+    z-index: 1;
+    width: 45%;
+    padding: 5px;
+}
+#c2 #f3 .cajadirect, #c2 #f4 .cajadirect, #c2 #f5 .cajadirect {
+    display: flex;
+    align-items: center;
+    font-size: 0.5rem;
+    padding: 5px;
+    border: 1px solid var(--n5);
+    border-radius: 10px;
+}
+#c2 #f3 .cajadirect a ,#c2 #f4 .cajadirect a ,#c2 #f5 .cajadirect a {
+  width:5%;
+    margin-left: 10px;
+    margin-top: 0;
+    color: var(--pr4);
+}
+ #c2 #f3 .cajadirect .solar-icons, #c2 #f4 .cajadirect .solar-icons, #c2 #f5 .cajadirect .solar-icons {
+    margin-right: 10px;
+}
+#c1 .ImagenCategoria-Staff {
+    background: var(--fd5);
+    width: 55%;
+    height: 200px;
+    background-size: cover;
+    margin-top: -80px;
+}
+  /*CATEGORIA 2*/
+#c2 .Categoria2 {
+    position: absolute;
+    width: 63%;
+    height: 100%;
+    background: var(--fd2);
+    background-size: contain;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+#c2 #forosContainer_c2 {
+    max-height: 500px;
+  overflow:hidden;
+}
+#c2 .contenedor-foros {
+    display: grid;
+    grid-template-areas:
+        "f2 f3"
+        "f2 f4"
+        "f2 f5";
+    grid-template-columns: 52% 48%;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+}
+#c2 #f2:before {
+    content: '';
+    width: 45%;
+    height: 100%;
+    background: var(--fd8);
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--pr1);
+}
+#c2 #f2 .DescripcionForumS {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 55%;
+    height: 170px;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1em;
+    font-family: var(--f4);
+    color: var(--n6);
+    background: var(--n2);
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    margin-bottom: 6%;
+    font-size: 0.7rem;
+}
+  
+.infodescrip {
+    font-size: 1.5em;
+    font-family: var(--f4);
+    line-height: 1em;
+} 
+#c2 #f2 .part1-foro {
+    font-size: 1.5rem;
+    font-family: var(--f6);
+    box-sizing: border-box;
+    padding: 20px;
+    width: 55%;
+    position: absolute;
+    right: 0;
+    height: 160px;
+    display: grid;
+    overflow: hidden;
+}
+#c2 #f2 a.titulo-foro .solar-icons {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 1%;
+    color: var(--pr1);
+}
+  
+#c2 #f2 a.titulo-foro {
+    color: var(--n4);
+    letter-spacing: 4px;
+    padding: 10px;
+    background: var(--n1);
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+}
+#c2 #f2 .part2-foro {
+    position: absolute;
+    right: 0;
+    margin-top: 140px;
+    overflow: hidden;
+    width: 55%;
+    height: 170px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+}
+#c2 #f2 .part2-foro dl {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1em;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+#c2 #f2 .part2-foro dd {
+    width: 100%;
+}
+#c2 #f2 .cajadirect {
+    font-size: 0.7rem;
+    margin-top: 3%;
+    box-sizing: border-box;
+    line-height: 1em;
+}
+#c2 #f2 .cajadirect a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--n6);
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    width: auto;
+    padding: 5px;
+    background: var(--pr1);
+    border-radius: 2px;
+}
+#c2 #f2 .cajadirect span {
+    font-size: 0.8rem;
+    display: block;
+    text-align: right;
+    font-family: var(--f6);
+    background: var(--grad1);
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 3px;
+}
+#c2 #f2 .cajadirect span .solar-icons {
+    float: left;
+    color: var(--pr4);
+}
+#c2 #f2 .part2-foro .lastpost-avatar img {
+    display: none;
+}
+#c2 #f2 span.title {
+    padding: 10px;
+    display: block;
+    font-size: 0.6rem;
+    font-family: var(--f3);
+    color: var(--n4);
+    background: var(--n5);
+    border-radius: 5px;
+    width: 83%;
+    text-align: left;
+    border: 5px solid var(--n9);
+    outline: 1px solid var(--n5);
+}
+#c2 #f2 a.temarecien {
+    display: block;
+    font-size: var(--f2);
+    padding: 10px;
+    border-bottom: 1px solid var(--n7);
+    font-weight: bold;
+    color: var(--n6);
+}
+#c2 #f2 .staticpost {
+    display: flex;
+    padding: 0px 19px;
+    box-sizing: border-box;
+    gap: 5px;
+}
+#c2 #f2 .staticpost dd {
+    font-size: 0.6rem;
+    font-family: var(--f4);
+    text-transform: uppercase;
+    color: var(--n6);
+    font-weight: bold;
+    padding: 5px 10px;
+    background: var(--n1);
+    border-radius: 10px;
+    margin-top: 0%;
+}
+#c2 #f2 .infopost {
+    box-sizing: border-box;
+    font-size: 0.45rem !important;
+    display: flex;
+    padding: 10px;
+    color: var(--n6);
+    gap: 2px;
+    line-height: 1em;
+    font-family: var(--f3);
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  #c2 #f3, #c2 #f4, #c2 #f5 {
+    height: 167px;
+    overflow: hidden;
+    display: flex;
+    background: var(--n1);
+    align-items: center;
+    border-left: 1px solid var(--n5);
+      margin-bottom: -1px;
+  position:relative;
+}
+#c2 #f3 .part1-foro,#c2 #f4 .part1-foro,#c2 #f5 .part1-foro {
+    width: 25%;
+    border-right: 1px solid var(--n5);
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+#c2 #f3 .part2-foro, #c2 #f4 .part2-foro, #c2 #f5 .part2-foro {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    font-size: 0.8rem;
+    line-height: 1em;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+}
+#c2 #f3 .lastpost-avatar,#c2 #f4 .lastpost-avatar,#c2 #f5 .lastpost-avatar {
+display: none;
+}
+#c2 #f3 a.temarecien, #c2 #f4 a.temarecien, #c2 #f5 a.temarecien {
+    display: block;
+    padding: 10px;
+    background: var(--n2);
+    border-radius: 10px;
+    width: 150px;
+    margin: 10px 0 5px 5px;
+    font-family: var(--f3);
+    font-weight: bold;
+    font-size: 0.7rem;
+    line-height: 1;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+}
+#c2 #f4 .staticpost, #c2 #f3 .staticpost, #c2 #f5 .staticpost {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    font-size: 0.5rem;
+    width: 25%;
+}
+#c2 #f3 .staticpost dd,#c2 #f4 .staticpost dd,#c2 #f5 .staticpost dd {
+    width: 50%;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--n6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#c2 #f3 .staticpost dfn,#c2 #f4 .staticpost dfn,#c2 #f5 .staticpost dfn {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    margin-left: 5px;
+    color: var(--pr3);
+}
+#c2 #f5 .infopost, #c2 #f4 .infopost, #c2 #f3 .infopost {
+    font-size: 0.8em !important;
+    display: flex;
+    line-height: 0.9em;
+    color: var(--n6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 0px 0 0px 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+#c2 #f3 dd.lastpost, #c2 #f4 dd.lastpost, #c2 #f5 dd.lastpost {
+width: 100% !important;
+    font-size: 0.8rem !important;
+    height: 100%;
+    justify-content: center;
+    display: inline-grid;
+}
+#c2 #f3 span.lastpost-avatar, #c2 #f4 span.lastpost-avatar, #c2 #f5 span.lastpost-avatar {
+    height: 50px;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    width: 50px;
+    border-radius: 100px;
+    text-align: center;
+    border: 2px solid var(--n5);
+    outline: 10px solid var(--n9);
+    margin: 10px 0px 5px 60px;
+}
+#c2 #f4 .marcoforumS, #c2 #f5 .marcoforumS, #c2 #f3 .marcoforumS {
+    position: absolute;
+    top: 0;
+    background: var(--fd7);
+    background-size: cover;
+    height: 75px;
+    width: 80px;
+    z-index: 1;
+    margin-top: 7px;
+    margin-left: -15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#c2 #f3 .lastpost-avatar img, #c2 #f4 .lastpost-avatar img, #c2 #f5 .lastpost-avatar img {
+    width: 100px;
+    height: auto;
+    border-radius: 0px !important;
+    margin-top: -40px;
+}
+#c2 #f3 .DescripcionForumS, #c2 #f4 .DescripcionForumS, #c2 #f5 .DescripcionForumS {
+    height: 120px;
+    font-size: 0.7rem;
+    display: grid;
+    line-height: 1em;
+    padding: 10px;
+    align-items: center;
+    text-align: justify;
+    color: var(--n6);
+    border: 1px solid var(--n5);
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--n2);
+}
+#c2 #f3 .part3-foro,#c2 #f4 .part3-foro,#c2 #f5 .part3-foro {
+    width: 40%;
+  height:100%;
+}
+#c2 #f3 .part1-foro .solar-icons,#c2 #f4 .part1-foro .solar-icons,#c2 #f5 .part1-foro .solar-icons {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    background: var(--grad1);
+    color: var(--pr8);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    transform: rotate(45deg);
+    margin-top: 0px;
+    width: 2rem;
+}
+#c2 #f3 .part1-foro .titulo-foro, #c2 #f4 .part1-foro .titulo-foro, #c2 #f5 .part1-foro .titulo-foro {
+    line-height: 1em;
+    font-family: var(--f4);
+    text-transform: uppercase;
+    color: var(--pr8);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 165px;
+}
+#c2 #f2 {
+    grid-area: f2;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+#c2 #f3 {
+  grid-area: f3; /* Asigna el área f3 al elemento */
+}
+
+#c2 #f4 {
+  grid-area: f4; /* Asigna el área f4 al elemento */
+      border-top: 1px solid var(--n5);
+}
+
+#c2 #f5 {
+  grid-area: f5; /* Asigna el área f5 al elemento */
+   border-top: 1px solid var(--n5);
+}
+  /*CATEGORIA 3*/
+div#forosContainer_c4 {
+    position: relative;
+    height: 540px;
+}
+#c4 .foro {
+    position: Relative;
+    display: inline-grid;
+    width: calc(70% / 2);
+    box-sizing: border-box;
+    height: calc(492px / 2);
+    background: var(--n1);
+    float: left;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-left: 15px;
+    border: 1px solid var(--pr6);
+    overflow: hidden;
+}
+#c4 .part1-foro {
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    font-size: 1rem;
+    background-image: linear-gradient(90deg, var(--grd1) 35.3%, var(--grd2) 100.3%);
+    z-index: 99999 !important;
+}
+  
+#c4 .part1-foro a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: var(--f4);
+    letter-spacing: 2px;
+    color: var(--n4);
+    text-transform: uppercase;
+}
+  
+#c4 .part1-foro .solar-icons {
+    width: 74px;
+    font-size: 1.5rem;
+    float: left;
+    background: transparent;
+    color: var(--pr8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: -webkit-fill-available;
+    display: grid;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+  
+#c4 .part2-foro {
+    padding: 10px;
+    display: flex;
+    background: var(--n1);
+    width: 100%;
+    border-top: 1px solid var(--n5);
+    height: 40px;
+    overflow: hidden;
+}
+  
+#c4 dl.icon {
+    width: 100%;
+}
+#c4 dd.lastpost {
+    width: 80% !important;
+    font-size: 0.8rem !important;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+#c4 span.title {
+    width: 100%;
+    display: flex;
+    font-size: 0.8em !important;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 1.5em;
+    margin: 0 0 0 33px;
+}
+#c4 span.title .temarecien {
+    padding: 8px;
+    background: var(--n8);
+    color: var(--pr4);
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid var(--n3);
+    display: inline-block;
+    max-width: 130px;
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+}
+#c4 .infopost {
+    height: 25px;
+    font-size: 0.6rem;
+    color: var(--n6);
+    background: var(--n8);
+    margin: 0 0 0 10px;
+    width: 135px;
+    padding: 8px;
+    line-height: 1.3em;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    flex-flow: column-reverse;
+    border: 1px solid var(--n3);
+}
+#c4 span.lastpost-avatar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 73px;
+    height: 181px;
+    background: transparent;
+    border-right: 1px solid var(--n5);
+}
+#c4 span.lastpost-avatar img {
+    width: 100px;
+    height: auto;
+    border-radius: 0px !important;
+    margin: 0px 0px 0 -9px;
+}
+#c4 .part3-foro {
+    font-size: 0.8em !important;
+    line-height: 1em;
+    font-family: var(--f4);
+    width: 82%;
+    margin: 0px 0 0 75px;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 15px;
+    color: var(--n6);
+}
+#c4 .cajadirect {
+    background: var(--n9);
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    border: 1px solid var(--n5);
+    width: 80%;
+    bottom: 0;
+    height: 25px;
+    margin-bottom: -2%;
+  opacity:0;
+  transition:0.3s linear;
+}
+#c4 .cajadirect .solar-icons {
+    font-size: 1rem;
+    color: var(--pr4);
+    margin-right: 10px;
+}
+#c4 .cajadirect a {
+    color: var(--n4);
+    margin-right: 10px;
+}
+#c4 .foro:hover .cajadirect{
+  opacity:1;}
+#forosContainer_c4:before {
+    content: '';
+    background: var(--fd6);
+    height: 500px;
+    width: 30%;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
+    animation: float 2.5s infinite;
+    z-index: 999999 !important;
+}
+#c4 .staticpost {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    font-size: 0.6rem;
+    width: 74px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column;
+    flex-direction: column-reverse;
+}
+#c4 .staticpost dd {
+    width: 100%;
+    display: flex;
+    background: var(--n2);
+    justify-content: center;
+    font-family: var(--f4);
+    font-size: 0.6rem;
+    color: var(--pr4);
+    letter-spacing: 1px;
+    border-top: 1px solid var(--n5);
+    border-right: 1px solid var(--n5);
+}
+#c4 .staticpost dfn {
+    font-style: normal;
+    margin-left: 10px;
+    color: var(--n6);
+    text-transform: uppercase;
+}
+/* Definición de la animación específica para .Categoria2 .marcoforum2 */
+@keyframes float-categoria {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px); /* Subir 10 píxeles */
+    }
+    100% {
+        transform: translateY(0px); /* Volver a la posición original */
+    }
+}
+  /*CATEGORIA NORTE*/
+#c3 #forosContainer_c3,#c5 #forosContainer_c5 {
+    max-height: 470px;
+  overflow:hidden;
+}
+#c3 .tab-container, #c5 .tab-container-c5 {
+    display: flex;
+    flex-direction: column;
+}
+
+#c3 .tabs, #c5 .tabs-c5 {
+    display: flex;
+    width: 100%;
+}
+
+#c3 .tab, #c5 .tab-c5{
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid var(--n7);
+    background-color: var(--n9);
+    margin-right: 2px;
+    transition: background-color 0.3s;
+    color: var(--n4);
+    height: 40px;
+    font-size: 8px;
+    font-family: var(--f3);
+    line-height: 5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#c3 .tab.active .solar-icons, #c5 .tab-c5.active .solar-icons,#c3 .tab.active .fas, #c5 .tab-c5.active .fas{
+    transform: rotate(24deg) !important;
+    color: var(--n3) !important;
+    padding: 10px !important;
+    border-radius: 100px !important;
+    margin-top: -5px !important;
+}
+
+#c3 .tab .solar-icons, #c5 .tab-c5 .solar-icons,#c3 .tab .fas, #c5 .tab-c5 .fas {
+   transform: rotate(0deg) !important;
+    float: left !important;
+    font-size: 30px !important;
+    color: var(--pr4) !important;
+    margin: 3px !important;
+}
+
+#c3 .tab:last-child, #c5 .tab-c5:last-child {
+    margin-right: 0;
+}
+
+#c3 .tab:hover,  #c5 .tab-c5:hover {
+    background-color: var(--pr3);
+}
+
+#c3 .tab.active, #c5 .tab-c5.active {
+    background-color: var(--n2);
+}
+
+#c3 .content, #c5 .content-c5{
+    height: 388px;
+    padding: 10px;
+    background-color: transparent;
+    display: none;
+    transition: transform 0.5s ease;
+    transform: translateX(100%);
+}
+
+#c3 .slide-in, #c5 .slide-in {
+    transform: translateX(0);
+}
+  /*FORO NORTE*/
+#c3 #f10 .ImagenCat4,#c3 #f15 .ImagenCat4 ,#c3 #f16 .ImagenCat4 ,#c3 #f17 .ImagenCat4  {
+    background: var(--img1);
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 606px;
+    top: -120px;
+    background-size: cover;
+}
+#c3 #f15 .ImagenCat4{
+    background: var(--img2);
+    background-size: cover;
+}
+#c3 #f16 .ImagenCat4{
+    background: var(--img3);
+    background-size: cover;
+}
+#c3 #f17 .ImagenCat4{
+    background: var(--img4);
+    background-size: cover;
+}
+#c3 .content.content1 {
+    background: var(--fr1);
+    background-size: cover;
+    background-position: center;
+}
+#c3 .content.content2 {
+    background: var(--fr2);
+    background-size: cover;
+    background-position: center;
+}
+#c3 .content.content3 {
+    background: var(--fr3);
+    background-size: cover;
+    background-position: center;
+}
+#c3 .content.content4 {
+    background: var(--fr4);
+    background-size: cover;
+    background-position: center;
+}
+#c3 .content.content5 {
+    background: var(--fr5);
+    background-size: cover;
+    background-position: center;
+}
+  /*FORO SUR*/
+#c5 #f13 .ImagenCat4,#c5 #f18 .ImagenCat4 ,#c5 #f23 .ImagenCat4 ,#c5 #f24 .ImagenCat4  {
+    background: var(--img5);
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 606px;
+    top: -120px;
+    background-size: cover;
+}
+#c5 #f18 .ImagenCat4{
+    background: var(--img6);
+    background-size: cover;
+}
+#c5 #f23 .ImagenCat4{
+    background: var(--img7);
+    background-size: cover;
+}
+#c5 #f24 .ImagenCat4{
+    background: var(--img8);
+    background-size: cover;
+}
+#c5 .content-c5.content1 {
+    background: var(--fr6);
+    background-size: cover;
+    background-position: center;
+}
+#c5 .content-c5.content2 {
+    background: var(--fr7);
+    background-size: cover;
+    background-position: center;
+}
+#c5 .content-c5.content3 {
+    background: var(--fr8);
+    background-size: cover;
+    background-position: center;
+}
+#c5 .content-c5.content4 {
+    background: var(--fr9);
+    background-size: cover;
+    background-position: center;
+}
+  /*Foros Categorias norte & Sur*/
+#c3 .foro, #c5 .foro {
+    width: 50%;
+    height: 310px;
+    background: var(--n9);
+    margin-bottom: 10px;
+    position: relative;
+    top: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    overflow: hidden;
+  opacity:0;
+  transition:0.5s linear;
+}
+#c3 .content:hover .foro, #c5 .content-c5:hover .foro{
+  opacity:1;
+  }
+#c3 .part1-foro, #c5 .part1-foro {
+    padding: 20px;
+    background: var(--n1);
+    text-align: right;
+    border-bottom: 1px solid var(--n5);
+    border-radius: 10px;
+    display: block;
+    height: 60px;
+    line-height: 2em;
+    box-sizing: border-box;
+}
+#c3 a.titulo-foro,#c5 a.titulo-foro {
+    font-family: var(--f6);
+    color: var(--n6);
+    text-decoration: none;
+    font-size: 25px;
+}
+#c3 .part1-foro .solar-icons,#c3 .part1-foro .fas, #c5 .part1-foro .solar-icons, #c5 .part1-foro .fas{    color: var(--pr3);
+    font-size: 40px;
+    float: left;
+    padding: 10px;
+    background: var(--n2);
+    border: 1px solid var(--n5);
+    border-radius: 10px;}
+#c3 .part2-foro, #c5 .part2-foro {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    height: 80px;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background: var(--n1);
+}
+#c3 dl,#c5 dl  {display: flex;width:100%;align-items: center;}
+#c3 dd.lastpost, #c5 dd.lastpost {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+#c3 .staticpost, #c5 .staticpost {
+    width: 40%;
+    border: 1px solid var(--n5);
+    border-radius: 10px;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    margin-right: 10px;
+    align-items: center;
+}
+#c3 .staticpost dd, #c5 .staticpost dd {
+    display: flex;
+    padding: 10px;
+    background: var(--n9);
+    height: 40%;
+    margin: 10px;
+    font-size: 0.8rem;
+    width: 35%;
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    font-family: var(--f6);
+    color: var(--n6);
+    align-items: center;
+    justify-content: center;
+}
+#c3 .staticpost dfn,#c5 .staticpost dfn {
+    font-style: normal;
+    margin-left: 10px;
+    color: var(--pr4);
+    font-family: var(--f4);
+}
+#c3 span.lastpost-avatar,#c5 span.lastpost-avatar {
+    width: 70px;
+    height: 70px;
+    border: 1px solid var(--pr3);
+    margin-left: 3px;
+    padding: 0px;
+    overflow: hidden;
+    margin-top: 3px;
+    border-radius: 10px;
+}
+#c3 span.lastpost-avatar img,#c5 span.lastpost-avatar img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+}
+#c3 .marcoforumS,#c5 .marcoforumS {
+    width: 70px;
+    height: 70px;
+    background: var(--fd3);
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+}
+#c3 .part3-foro, #c5 .part3-foro {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1em;
+    text-align: justify;
+    padding: 10px 20px;
+    color: var(--n6);
+    font-family: var(--f4);
+    position: relative;
+    height: 150px;
+    box-sizing: border-box;
+}
+#c3 .cajadirect, #c5 .cajadirect {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid var(--n5);
+    border-radius: 10px;
+    align-items: center;
+}
+#c3 .cajadirect .solar-icons, #c5 .cajadirect .solar-icons {
+    font-size: 1.2rem;
+    background: var(--n5);
+    padding: 10px;
+    margin-left: -10px;
+    border-radius: 10px;
+}
+#c3 .cajadirect a,#c5 .cajadirect a {
+    font-size: 12px;
+    margin-left: 10px;
+}
+#c3 span.title, #c5 span.title {
+    font-size: 10px;
+    width: 70%;
+    text-align: center;
+    color: var(--n4);
+    display: flex;
+    gap: 20px;
+    line-height: 1em;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#c3 a.temarecien, #c5 a.temarecien {
+    color: var(--pr4);
+    font-family: var(--f4);
+    display: flex;
+    font-size: 0.7rem;
+    padding: 10px;
+    font-weight: bold;
+    background: var(--n8);
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    height: 25px;
+    width: 80px;
+    align-items: center;
+    line-height: 0.8em;
+    overflow: hidden;
+    text-align: left;
+}
+#c3 .infopost, #c5 .infopost {
+    width: 40%;
+    font-size: 0.5rem;
+    padding: 5px;
+}
+#c3 span.color-groups,#c5 span.color-groups{
+    float: none;
+    display: inline;
+    text-transform: uppercase;
+}
+  /*Categoria 06*/
+#c6 .contenedor-foros {
+    display: flex;
+}
+#c6 .contenedor-foros .foro {
+    height: 300px;
+    overflow: hidden;
+}
+#c6 #f29, #c6 #f30, #c6 #f31 {
+    height: 300px;
+    overflow: hidden;
+    border-right: 1px solid var(--n5);
+    display: inline-block;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+}
+#c6 #f31 {
+    border-right: 0px solid var(--n5);
+}
+#c6 .part1-foro {
+    padding: 10px;
+    height: 80px;
+    background: var(--n9);
+    text-align: right;
+    font-size: 30px;
+    font-family: var(--f6);
+    line-height: 2.7em;
+    border-bottom: 1px solid var(--n5);
+}
+#c6 span.lastpost-avatar {
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--pr3);
+    border-radius: 100px;
+    padding: 0px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#c6 span.lastpost-avatar img {
+    width: 80px;
+    height: auto;
+    filter: grayscale(1);
+}
+#c6 .marcoforumS {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    background: var(--fd7);
+    background-size: contain;
+}
+#c6 dd.lastpost {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#c6 span.title {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--n7);
+    color: var(--n4);
+    width: 230px;
+}
+#c6 a.temarecien {
+    display: block;
+    font-size: 14px;
+    font-family: var(--f3);
+    color: var(--pr4);
+}
+#c6 span.color-groups {
+    float: none;
+    display: inline;
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+#c6 a.titulo-foro {
+    color: var(--pr5);
+}
+#c6 .part1-foro .solar-icons {
+    float: left;
+    font-size: 80px;
+    transform: rotate(16deg);
+    color: var(--pr3);
+    margin-left: 10px;
+}
+#c6 .part3-foro {
+    font-size: 10px;
+    padding: 10px;
+    float: right;
+    width: 65%;
+    text-align: justify;
+    line-height: 1em;
+    color: var(--n6);
+    font-family: var(--f4);
+}
+#c6 .staticpost {
+    float: left;
+    font-size: 10px;
+    font-family: var(--f3);
+    width: 100px;
+}
+#c6 .staticpost dfn {
+    font-size: 6px;
+    font-style: normal;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 10px;
+}
+#c6 dd.topics, #c6 dd.posts {
+    width: 100%;
+    margin: 10px;
+    background: var(--pr3);
+    border-radius: 10px;
+    color: var(--n4);
+}
+  
+#f3 .infodescrip, #f4 .infodescrip, #f5 .infodescrip {
+    font-size: 1.3em;
+    font-family: var(--f4);
+    line-height: 1em;
+}
+  
+#c4 .infodescrip {
+    font-size: 1.1em;
+    font-family: var(--f4);
+    line-height: 1em;
+}  
+  
+#c3 .infodescrip {
+    font-size: 1.2em;
+    font-family: var(--f4);
+    line-height: 1.2em;
+}  
+</style>
