@@ -1,0 +1,1964 @@
+<center>
+	  
+	<div id="profile-username">
+          <div class="indiceprofile">
+            <a href="#expe">01</a>
+            <a href="#esta">02</a>
+            <a href="#crono">03</a>
+          </div>
+          <div class="profile-usercontent">
+            <div class="profile-user1">
+            <div class="part1p-bf"> 
+              <div class="Avatarportada-bf">          
+					<div class="Marcoavatar-ID">
+					</div>
+              <avatar class="perfilavatar">{AVATAR_IMG}</avatar></div>
+              <div class="part2p-bf"><div class="portada-BF">
+              <div class="cajaportada-bf"></div>
+                 <div class="rankpf">{POSTER_RANK}</div>
+                <div class="nameuser">
+                  {USERNAME}
+                  <online>{USER_ONLINE}</online>
+                </div>
+            </div>
+ <div class="Navprofile-BF"><a href="/sta/{PUSERNAME}"><i class="solar-icons" stroke="1.5" icon-name="file-2"></i>
+Temas</a><a href="/spa/{PUSERNAME}"><i class="solar-icons" stroke="1.5" icon-name="chats-2"></i>
+Mensajes</a><!--<a href="#" id="toggle-mode"><i class="solar-icons" stroke="1.5" icon-name="sun-2"></i>
+              Cambiar</a>--><a href="/forum"><i class="solar-icons" stroke="1.5" icon-name="home-2"></i> Índice</a><a href="https://abyssium.foroactivo.com/t249-revision-de-fichas#1279"><i class="solar-icons" stroke="1.5" icon-name="clipboard-1"></i> Revisión de ficha</a>
+ <a href="#" class="cajainfoperfil" id="toggle-info">
+    <i class="solar-icons" stroke="1.5" icon-name="warning-square"></i> Información
+  </a>
+  <!-- <a href="#" class="cajainfoperfil" id="toggle-staff">
+   <i class="solar-icons" stroke="1.5" icon-name="crown-1"></i> Staff
+  </a> -->
+
+
+  <div id="infobf" class="contenidobf">
+    <span><i class="solar-icons" stroke="1.5" icon-name="edit-circle"></i> Tutorial - Editar Perfil</span>
+  Perfil avanzado dinamico, utilidad como ficha de personaje rpg. Exclusivo para los usuarios de Blue Flames.
+    <br/> <br/>
+   <i class="solar-icons" stroke="1.5" icon-name="arrow-right"></i>
+ Los campos editables por el usuario: Genero, Fecha de cumpleaños, avatar 300x525, portada 900x300, minicon 100x100,frase.
+    <br/> <br/>
+    <i class="solar-icons" stroke="1.5" icon-name="arrow-right"></i> El avatar y los campos de contacto son editados desde configuracion de perfil.
+    <br/><br/>
+     <i class="solar-icons" stroke="1.5" icon-name="arrow-right"></i>El usuario puede modificar el fondo del perfil y agregar musica solo es necesario usar los links correspondiente. img jpg o png, musica dl=0 a raw=1
+    <br/> <br/>
+      <i class="solar-icons" stroke="1.5" icon-name="arrow-right"></i>Expediente del personaje: Es editable la firma 500x250, Informacion general, Descripcion fisica, Descripcion Psicologica, Atributos, Afinidad.
+    <br/> <br/>
+      <i class="solar-icons" stroke="1.5" icon-name="arrow-right"></i>Cronologia del expediente: Pareja del personaje, Relaciones personales,Capitulos y tramas.
+        <br/> <br/>
+    <i class="solar-icons" stroke="1.5" icon-name="arrow-right"></i>Estadisticas,Tecnicas, Inventario,Medallero,Yenes,Experiencia,Nivel <br/> Habilidad, Historia, solamente es editable por el staff.
+        <br/> <br/>
+    <i class="solar-icons" stroke="1.5" icon-name="arrow-right"></i>Una vez que la ficha este terminada debes pasar por registro a completar los formularios.
+    <a href="/forum" class="linkguia">Guia de expediente</a>
+              </div>
+
+  <div id="staffbf" class="contenidobf">
+  <span><i class="solar-icons" stroke="1.5" icon-name="crown-1"></i> Contactar Staff</span>
+    <span1>
+      <img src="https://images2.imgbox.com/2b/87/Hw7Ij4yJ_o.png"/>
+      <rank>Webmaster</rank>
+      <espe>General</espe>
+      <a href="https://blueflames.foroactivo.com/privmsg?mode=post&u=1">Enviar MP</a>
+    </span1>
+    <span1>
+      <img src="https://images2.imgbox.com/25/cc/aqlzvlxr_o.png"/>
+      <rank>Administradora</rank>
+      <espe>General</espe>
+      <a href="https://blueflames.foroactivo.com/privmsg?mode=post&u=52">Enviar MP</a>
+    </span1>
+        <span1>
+      <img src="https://images2.imgbox.com/67/30/z670hubY_o.png"/>
+      <rank>Moderador</rank>
+      <espe>Narrador</espe>
+      <a href="https://blueflames.foroactivo.com/privmsg?mode=post&u=74">Enviar MP</a>
+    </span1>
+              </div>
+            </div></div>
+            </div>
+              <div class="Informaciongeneral-pf">
+                <div class="TotalMensaje"></div>
+                <div class="lastvisit">
+                  <i class="solar-icons" stroke="1.5" icon-name="clock-1"></i>
+                  {LAST_VISIT_TIME}</div>
+                <div class="contactcainf">
+							            
+							<!-- BEGIN contact_field -->            <dl id="field_id{contact_field.ID}"> <dd>{contact_field.CONTENT}</dd> </dl> 
+							<!-- END contact_field -->                
+						</div>
+						
+              </div>
+              <div class="part3p-bf">
+                <div class="contentgene-part1">
+                  <div class="minicon"></div>
+                  <div class="voicepersonaje">
+            <button class="voicepj-bf" id="play-btn">
+    <i class="solar-icons" stroke="1.5" icon-name="volume-high"></i>
+</button>
+                  </div>
+                  <div class="frasepj"><i class="fas fa-quote-left"></i></div>
+                </div>
+                <div class="contentgene-part2">
+                  <div class="dat">
+                  <button style="" class="followBtn {C_CLASS} button1" data-id="{CUR_USER_ID}" onclick="doFollowAction(this);">
+							                    {CUR_FOLLOW_TEXT} 
+						</button></div>
+                  <div class="dat3"><i class="solar-icons" stroke="1.5" icon-name="mouse-circle"></i>
+{FRIENDSFOES} {ADMINISTRATE_USER}{BAN_USER}</div>
+                </div>
+              </div>
+              <div class="cajafondo">
+                <i class="solar-icons" stroke="1.5" icon-name="headphones-4"></i> Voz / Música
+                <div class="linkvoice"></div>
+                <i class="solar-icons" stroke="1.5" icon-name="paint-roller"></i> Fondo de peril
+                <div class="linkfondoperfil"></div></div>
+               <div class="profile-user2" value="texto">
+              <div class="tituloprofile-BF" id="expe">
+                <span><i class="solar-icons" stroke="1.5" icon-name="clipboard-1"></i>
+                  Ficha
+                <div class="nombrePJ"></div></span>
+                <div class="numberexp"></div>
+              </div>
+              <div class="part4p-bf">
+                <div style="height:20px;"></div>
+                <div class="datogeneral-pjbf">
+                  <div class="firmaperfil"></div>
+                  <div class="Datpj"></div>
+                </div>
+                <div class="datogeneral-pjbf">               
+									<div class="Descfisic">
+									</div>
+									<div class="Imgpj">
+										</div>                
+									<div class="Descpsico">
+									</div>
+                </div>
+                <div class="Historiapj-bf" id="esta">
+                  <span><i class="solar-icons" stroke="1.5" icon-name="book-closed-3"></i> Historia</span>
+                  <div class="Histopj"></div></div>
+                 <div class="tituloprofile-BF2">
+                <span><i class="solar-icons" stroke="1.5" icon-name="pie-chart-1"></i>
+                  Estadisticas</span></div>
+              <div class="part5p-bf">
+                <div class="Level">
+             <div class="marcolevel"></div>
+                <div class="level"></div>
+                  <div class="exppf-bf"></div>
+                </div>
+                <div class="Atributos-Ext">
+               <div class="atributos"></div>
+               <div class="pppv"></div>
+             </div>
+                <div class="afinidadpf-bf">
+                  <div class="afipj-bf"></div>
+                  <div class="afinpj-bf"></div>
+                  <div class="dividerpj-bf"></div>
+                  <div class="habilidad"></div>
+                </div>
+                </div>
+              <div class="part6p-bf"> <div class="tituloprofile-BF3">
+                <i class="solar-icons" stroke="1.5" icon-name="shield-star"></i>
+                  Tecnicas</span></div>
+<button class="tecnicaspj-bf" data-index="0">D</button>
+<button class="tecnicaspj-bf" data-index="1">C</button>
+<button class="tecnicaspj-bf" data-index="2">A</button>
+<button class="tecnicaspj-bf" data-index="3">S</button>
+                <div class="content-tecnicas"><span class="titletec">Técnica Nivel D</span>
+  <div class="niveld"></div></div>
+                <div class="content-tecnicas"><span class="titletec">Técnica Nivel C</span>
+ <div class="nivelc"></div></div>         
+                <div class="content-tecnicas"><span class="titletec">Técnica Nivel A</span>
+  <div class="nivela"></div></div>
+                <div class="content-tecnicas"><span class="titletec">Técnica Nivel S</span>
+        <div class="nivels"></div></div>
+
+                </div></div></div>
+                   <div class="tituloprofile-BF4" id="crono">
+                <span><i class="solar-icons" stroke="1.5" icon-name="hourglass-1"></i>
+                  Cronologia</span></div>
+              <div class="part7p-bf">
+		<div class="actual">
+		<div class="Avatarcouple"></div>
+		<span>Pareja <i class="solar-icons" stroke="1.5" icon-name="hearts"></i> Actual</span>                  
+		<div class="infocouple"></div></div>
+		<div class="otros"><span>Relaciones personales</span>                    
+		<div class="Cajaother"></div></div>
+		<div class="Cronologia"><span><i class="solar-icons" stroke="1.5" icon-name="paperclip-1"></i> Capitulos / Tramas</span>                  
+		<div class="CajaCap"></div></div>			
+                </div>
+                <div class="part8p-bf">
+                  <div class="cajaInve">
+                   <div class="yenesuser">
+                    <i class="solar-icons" stroke="1.5" icon-name="money-2"></i>
+<div class="Yenestotal">Temas</div></div>
+                  </div>
+                  <div class="titleiven">
+                   <i class="solar-icons" stroke="1.5" icon-name="trophy-star"></i>
+                    <span>Medallero</span>
+                  </div>
+                  <div class="cajainv">              
+		</div>
+              </div>
+              <div class="registredpj-bf"></div>
+            </div>
+          </div>
+          </div>
+<!-- BEGIN switch_user_logged_in -->
+<p class="right rightside">{LAST_VISIT_DATE}</p>
+<!-- END switch_user_logged_in -->
+<p>{CURRENT_TIME}</p>
+
+<h1 class="page-title">{L_VIEWING_PROFILE}</h1>
+<div class="panel bg1">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<div class="column1">
+		<div class="h3">{L_USER_PRESENCE}</div>
+		<dl class="left-box details" style="width: 80%;">
+			<dt>{L_AVATAR_IMG}</dt><dd>{AVATAR_IMG}</dd>
+		</dl>
+		<!-- BEGIN switch_follow_member -->
+		<dl class="left-box details block-follow">
+			<dt></dt>
+			<dd>
+				<button onclick="doFollowAction(this);" data-id="{CUR_USER_ID}" class="followBtn {C_CLASS} button1">
+                    {CUR_FOLLOW_TEXT}
+				</button>
+			</dd>
+		</dl>
+		<!-- END switch_follow_member -->
+		<dl class="left-box details" style="width: 80%;">
+			<dt>{L_RANK}:</dt><dd><strong>{POSTER_RANK}</strong></dd>
+			<!-- BEGIN switch_show_status -->
+			<dt>{L_STATUT}:</dt><dd><strong>{USER_ONLINE}</strong></dd>
+			<!-- END switch_show_status -->
+		</dl>
+		<!-- BEGIN switch_allow_friendsfoes -->
+		<dl class="left-box details" style="width: 80%;margin-top:10px;margin-bottom:10px">
+			<dt>{L_FRIENDS_AND_FOES}:</dt><dd><strong>{FRIENDSFOES}</strong></dd>
+		</dl>
+		<!-- END switch_allow_friendsfoes -->
+		<!-- BEGIN switch_groups_list -->
+		<dl class="left-box details" style="width: 80%;margin-top:10px;margin-bottom:10px" id="groups-details">
+			<dt>{switch_groups_list.L_GROUPS}:</dt>
+			<dd><strong>
+				<!-- BEGIN group_details -->
+				<div id="{switch_groups_list.group_details.GROUP_ID}-name"><a href="{switch_groups_list.group_details.U_GROUP}" >{switch_groups_list.group_details.L_GROUP_NAME}</a></div>
+				<!-- END group_details -->
+			</strong></dd>
+		</dl>
+		<!-- END switch_groups_list -->
+
+		<!-- BEGIN switch_auth_user -->
+		<dl class="left-box details" style="width: 80%;margin-top:10px;margin-bottom:10px">
+			<dt>{L_ADMINISTRATE_USER}:</dt><dd><strong>{ADMINISTRATE_USER}{BAN_USER}</strong></dd>
+		</dl>
+		<!-- END switch_auth_user -->
+		<!-- BEGIN switch_awards -->
+		<div class="awards_block_simple_wrapper" style="float: left; width: 100%;">
+			<div class="h3">{switch_awards.L_AWARDS}</div>
+			<div class="awards_block_simple">{switch_awards.AWARDS_LIST}</div>
+		</div>
+		<!-- END switch_awards -->
+
+	</div>
+	<div class="column2">
+		<div class="h3">{L_PROFILE}</div>
+		<!-- BEGIN profile_field -->
+		<dl id="field_id{profile_field.ID}" class="left-box details" style="width: 80%;">
+			<dt>{profile_field.LABEL}</dt> <dd>{profile_field.CONTENT}<!-- BEGIN profil_type_user_posts --> [{POST_PERCENT_STATS} / {POST_DAY_STATS}]
+				<!-- BEGIN links -->
+				<br /><span style="margin-left: 10px;"><a rel="nofollow" href="/st/{PUSERNAME}">{L_SEARCH_USER_POSTS} :</a></span>
+				<br /><span style="margin-left: 15px;">- <a rel="nofollow" href="/sta/{PUSERNAME}">{L_TOPICS}</a></span>
+				<br /><span style="margin-left: 15px;">- <a rel="nofollow" href="/spa/{PUSERNAME}">{L_POSTS}</a></span>
+				<!-- END links -->
+				<!-- END profil_type_user_posts --></dd>
+		</dl>
+		<!-- END profile_field -->
+	</div>
+	<div class="clear"></div>
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+<div class="panel bg2">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<div class="column1">
+	<form action="{S_PROFILE_ACTION}" method="post" name="post">
+		<div class="h3">{L_CONTACT} {USERNAME}</div>
+		<!-- BEGIN contact_field -->
+		<dl id="field_id{contact_field.ID}" class="left-box details" style="width: 80%;">
+			<dt>{contact_field.LABEL}</dt> <dd>{contact_field.CONTENT}</dd>
+		</dl>
+		<!-- END contact_field -->
+
+		<!-- BEGIN switch_admin_user_comment_active -->
+		<dl class="details">
+			<dt>{L_COMMENTS} :<br /><span class="italic">{L_MODS_AND_ADMINS}</span></dt>
+			<dd><textarea class="inputbox" name="admin_user_comment_text" rows="8" cols="30">{ADMIN_USER_COMMENT}</textarea></dd>
+		</dl>
+		<fieldset class="submit-buttons">
+			<input type="hidden" value="update_admin_user_comment" name="mode" />
+			<input type="hidden" value="{USER_ID}" name="userid" />
+			<input type="submit" class="button2" name="user_comment_maj" value="{L_UPDATE}" />
+		</fieldset>
+		<!-- END switch_admin_user_comment_active -->
+	</form>
+	</div>
+
+	<div class="column2">
+		<div class="h3">{L_STATS}</div>
+		<dl class="left-box details" style="width: 80%;"><dt>{L_LAST_VISITED}:&nbsp;</dt> <dd>{LAST_VISIT_TIME}</dd></dl>
+		<!-- BEGIN switch_dhow_mp -->
+		<dl class="left-box details" style="width: 80%;"><dt>{L_PRIVATE_MSG}:&nbsp;</dt> <dd>{PRIVATE_MSG}</dd></dl>
+		<!-- END switch_dhow_mp -->
+	</div>
+
+	<div class="clear"></div>
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+<!-- BEGIN switch_rpg -->
+<h1 class="page-title">{L_VIEWING_RPG}</h1>
+<div class="panel bg1">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<p style="text-align: center;">{RPG_IMAGE}</p>
+	<hr />
+
+	<!-- BEGIN rpg_fields_left -->
+	<div class="column1">
+		<dl class="details">
+			<dt>{switch_rpg.rpg_fields_left.F_NAME} :</dt>
+			<dd>{switch_rpg.rpg_fields_left.F_VALUE_NEW}</dd>
+		</dl>
+	</div>
+	<!-- END rpg_fields_left -->
+
+	<!-- BEGIN rpg_fields -->
+	<div class="column2">
+		<dl class="details">
+			<dt>{switch_rpg.rpg_fields.F_NAME} :</dt>
+			<dd>{switch_rpg.rpg_fields.F_VALUE_NEW}</dd>
+		</dl>
+	</div>
+	<!-- END rpg_fields -->
+	<div class="clear"></div>
+	<fieldset class="submit-buttons">
+		{U_ADMIN_RPG_NEW}
+	</fieldset>
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+<!-- END switch_rpg -->
+<script src="{JQUERY_ROOT}json/jquery.json-1.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready(function(){
+		$('[id^=field_id]').each(function(){
+			if ( $(this).find('.field_editable').is('span, div') )
+			{
+				$(this).hover(function()
+				{
+					if( $(this).find('.field_editable.invisible').is('span, div') )
+					{
+						$(this).find('.field_editable').prev().addClass('ajax-profil_hover').parent().addClass('ajax-profil_parent').append('<div class="ajax-profil_edit"><img src="{AJAX_EDIT_IMG}" /></div>');
+						$(this).find('.ajax-profil_edit').attr({
+								alt: "{L_FIELD_EDIT_VALUE}",
+								title: "{L_FIELD_EDIT_VALUE}"
+							}).click(function(){
+							$(this).prev().prev().removeClass('ajax-profil_hover').addClass('invisible').next().removeClass('invisible').append('<img src="{AJAX_VALID_IMG}" class="ajax-profil_valid" />').find('input,select');
+							$(this).prev().find('.ajax-profil_valid').attr({
+								alt: "{L_VALIDATE}",
+								title: "{L_VALIDATE}"
+							}).click(function(){
+								var content = new Array();
+								$(this).parent().find('[name]').each(function(){
+									var type_special = $(this).is('input[type=radio],input[type=checkbox]');
+									if ( (type_special && $(this).is(':checked')) || !type_special )
+									{
+										content.push(new Array($(this).attr('name'), $(this).attr('value')));
+									}
+								});
+								var id_name = $(this).parents('[id^=field_id]').attr('id');
+								var id = id_name.substring(8, id_name.length);
+								$.post(
+									"{U_AJAX_PROFILE}",
+									{id:id,user:"{CUR_USER_ID}",active:"{CUR_USER_ACTIVE}",content:$.toJSON(content),tid:"{TID}"},
+									function(data){
+										$.each(data, function (i, item) {
+											if (item.startsWith('error : ')){
+												let present_err=document.getElementById('field_id' + i + "_err");
+												if(!present_err){
+													let err = document.createElement('div');
+													err.id = 'field_id' + i + "_err";
+													err.classList.add("form-error");
+													err.textContent = item.substring(8);
+													document.getElementById('field_id' + i).querySelector('.field_editable input').after(err);
+												}else{
+													present_err.innerText=item.substring(8);
+												}
+											}else {
+												let err=document.getElementById('field_id' + i + "_err");
+												if(err){
+													err.remove();
+												}
+												$('[id=field_id' + i + ']').find('.field_uneditable').html(item).end().find('.ajax-profil_valid').remove().end().find('.field_editable').addClass('invisible').end().find('.field_uneditable').removeClass('invisible');
+											}
+										});
+									},
+									"json"
+								);
+							});
+							$(this).remove();
+						});
+					}
+				},function()
+				{
+					if( $(this).find('.field_editable.invisible').is('span, div') )
+					{
+						$(this).find('.field_editable').prev().removeClass('ajax-profil_hover');
+						$(this).find('.ajax-profil_edit').remove();
+					}
+				});
+			}
+		});
+	});
+//]]>
+</script>
+  <style>
+body#phpbb {
+    overflow: hidden;
+}
+textarea.inputbox {
+    width: 85%;
+    height: 40px;
+}
+#profile-username {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background: var(--n5);
+    z-index: 99999999;
+    width: 100%;
+    left: 0;
+    overflow: auto!important;
+    background-position: center!important;
+}
+.indiceprofile {
+position: fixed;
+    left: 0;
+    display: grid;
+    margin: 1%;
+    background: var(--bs);
+    padding: 10px;
+    gap: 20px;
+    border-radius: 4px;
+}
+.indiceprofile a {
+color: var(--pr1);
+    font-family: var(--ftitle2);
+    font-size: 1.5em;
+}
+.profile-usercontent {
+    background: var(--fnd);
+    width: 1100px;
+    margin-top: 30px;
+}
+.profile-user1 {
+background: var(--fnd);
+    height: auto;
+    position: relative;
+    padding: 20px;
+}
+.portada-BF {
+height: 300px;
+    background: var(--bs);
+    position: relative;
+    overflow: hidden;
+    border: 3px solid var(--ps2);
+}
+.cajaportada-bf {
+    width: 100%;
+    display: grid;
+}
+.portada-BF dd {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.portada-BF dt {
+    display: none !important;
+}
+
+
+.nameuser {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.8rem;
+    width: 25%;
+    line-height: 1em;
+    display: grid;
+    background: var(--ps2);
+    padding: 10px;
+    font-family: var(--fttext);
+    font-weight: bold;
+    color: var(--wh);
+    text-transform: uppercase;
+    clip-path: polygon(95% 0%, 100% 23%, 100% 100%, 0% 100%, 0% 0%);
+    border-top: 4px solid var(--pr1);
+}
+.nameuser online {
+    letter-spacing: 3px;
+    font-size: 0.5rem;
+    display: block;
+    padding: 5px;
+    color: var(--n6);
+}
+.Informaciongeneral-pf {
+height: 160px;
+    background-image: url(https://images2.imgbox.com/ec/a1/hUxlavXD_o.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    background-position-x: right;
+    background-size: 50.5em;
+    bottom: 10px;
+    position: relative;
+}
+.TotalMensaje {
+padding: 10px;
+    width: 10%;
+    background: var(--pr1);
+    margin: 2% 1%;
+    border-radius: 4px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    font-family: var(--ftsub);
+    color: var(--bs);
+}
+.TotalMensaje:after {
+    content: 'Total Mensajes';
+    display: block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--bs);
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.lastvisit {
+margin: 2% 0%;
+    padding: 10px;
+    background: var(--transp2);
+    border-radius: 4px;
+    font-size: 1.9em;
+    display: grid;
+    align-items: center;
+    font-family: var(--ftsub);
+    color: var(--pr1);
+    text-transform: uppercase;
+    width: 10%;
+    justify-content: center;
+}
+.lastvisit .solar-icons {
+    font-size: 1.5em;
+    margin-bottom: 2px;
+}
+.contactcainf {
+width: 19.7%;
+    display: flex;
+    margin: 2% 1%;
+    align-items: center;
+    gap: 10px;
+    background: var(--transp2);
+    padding: 20px;
+    border-radius: 4px;
+    justify-content: center;
+
+}
+.contactcainf .solar-icons, .contactcainf .fas {
+background: var(--pr1);
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    color: var(--bs);
+    border-radius: 4px;
+}
+.contenidobf {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: var(--n1);
+    top: 0;
+    z-index: 999;
+    height: 300px;
+    width: 550px;
+    border: 1px solid var(--n5);
+    margin-top: 10px;
+    margin-right: -50px;
+    border-radius: 20px;
+    font-family: var(--f3);
+    line-height: 1em;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px;
+    color: var(--n6);
+    font-size: 0.75rem;
+    overflow: hidden;
+}
+#infobf.contenidobf {
+    column-count: 2 !important;
+    width: 600px;
+}
+#staffbf span1 {
+    width: calc(85% / 3);
+    background: var(--n2);
+    display: inline-block;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    text-align: center;
+}
+#staffbf img {
+    border-radius: 10px;
+    margin: 20px;
+}
+#staffbf a {
+    display: inline-block;
+    width: 80%;
+    height: 20px;
+    margin-top: 10px;
+    background: var(--pr1);
+    border-radius: 5px;
+    line-height: 2.2em;
+    color: var(--n4);
+}
+#staffbf rank, #staffbf espe {
+    display: block;
+    padding: 3px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+.contenidobf span {
+    display: flex;
+    padding: 10px;
+    background: var(--n5);
+    width: 90%;
+    color: var(--n6);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.contenidobf span i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: var(--pr1);
+}
+a.linkguia {
+    height: 50px !important;
+    display: flex !important;
+    width: 95% !important;
+    background: var(--pr1) !important;
+    color: var(--n4) !important;
+    font-size: 0.7rem !important;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.contenidobf i {
+    color: var(--pr1);
+    margin-right: 5px;
+}
+.part1p-bf {
+    display: flex
+;
+}
+.part2p-bf {
+    width: 79%;
+}
+.part3p-bf {
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.profile-user2 dt,.profile-user1 dt {
+    display: none !important;
+}
+.profile-user2 dd,.profile-user1 dd{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.profile-user2 dl,.profile-user1 dl {
+    width: 100% !important;
+    text-align:center;
+}
+.minicon {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+.minicon .field_uneditable img {
+border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 100px;
+    border: 10px solid var(--pr1);
+}
+.voicepersonaje {
+    position: relative;
+    top: -100px;
+    left: 80px;
+    margin-bottom: -10px;
+}
+button.voicepj-bf {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: -30px;
+    margin-top: -10px;
+    background: var(--pr1);
+    font-size: 1.2rem;
+    color: var(--n4);
+    border: 0;
+    border: 1px solid var(--n5);
+}
+.frasepj {
+display: flex;
+    padding: 18px;
+    background: var(--transp2);
+    width: 97%;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    color: var(--wh);
+    font-family: var(--fttext);
+    font-weight: bold;
+    line-height: 1em;
+    align-items: center;
+    margin-left: -20px;
+}
+.frasepj .fas {
+color: var(--pr1);
+    font-size: 1.8rem;
+    margin-right: 12px;
+    padding: 10px;
+}
+.contentgene-part1 {
+    width: 49%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+.contentgene-part2 {
+    width: 51%;
+    display: flex;
+    height: 90%;
+}
+.dat {
+display: grid;
+    gap: 10px;
+    font-size: 0.7rem;
+    background: var(--transp2);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 25px;
+    color: var(--wh);
+    width: 100%;
+    align-items: center;
+}
+    
+ #followBtn::before, .followBtn::before { display: none; }
+    
+.dat button {
+background: var(--transp2);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.7em !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--ftitle2);
+}
+.dat:before {
+content: 'Detalles del Perfil';
+text-align: right;
+    font-family: var(--ftsub);
+    font-size: 2.3em;
+    color: var(--pr1);
+    border-bottom: 1px solid;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.dat dd {
+    text-align: left;
+}
+.dat dt {
+    display: block !important;
+    text-align: left !important;
+    width: 25% !important;
+}
+.dat3 {
+    background: var(--pr1);
+    margin-left: 15px;
+    border-radius: 4px;
+    font-size: 0.6rem;
+    width: 20%;
+}
+.dat3 a {
+color: var(--bs);
+    padding: 10px;
+    display: block;
+    width: 65px;
+    margin-top: -4px;
+    line-height: 1em;
+    font-size: 1.4em;
+    font-family: var(--ftsub);
+}
+.dat3 br {
+    display: none;
+}
+.dat3 .solar-icons {
+display: inline-block;
+    padding: 5px;
+    font-size: 3.5em;
+    color: var(--bs);
+    margin-top: 10px;
+}
+.cajafondo {
+display: flex;
+    padding: 10px;
+    font-family: var(--ftsub);
+    font-size: 1.9em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--pr1);
+    align-items: center;
+    background: var(--transp2);
+}
+.cajafondo .solar-icons {
+padding: 10px;
+    font-size: 1.2rem;
+    background: var(--pr1);
+    color: var(--bs);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.linkfondoperfil {
+    padding: 10px;
+    margin-right: 20px;
+}
+.linkfondoperfil a, .linkvoice a {
+    color: var(--n6);
+    margin-left: 10px;
+    font-size: 0.4rem;
+    display: block;
+    margin-right: 10px;
+    text-align: left;
+    width: 300px;
+}
+.tituloprofile-BF {
+    display: flex;
+    margin-top: 2%;
+}
+.tituloprofile-BF span {
+    display: flex;
+background: var(--transp2);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    align-items: center;
+    font-size: 1.5em;
+    color: var(--wh);
+    text-transform: uppercase;
+}
+.tituloprofile-BF .solar-icons {
+padding: 10px;
+    display: block;
+    font-size: 2.3em;
+    color: var(--wh);
+    border-radius: 4px;
+    margin-right: 0px;
+}
+.nombrePJ {
+    margin-left: 10px;
+    font-family: var(--ftitle2);
+    color: var(--pr1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.tituloprofile-BF dt {
+    display: none !important;
+}
+.numberexp { display: none; }
+
+    .part4p-bf {
+    height: auto;
+    background: var(--transp2);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.datogeneral-pjbf {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: left;
+    box-sizing: border-box;
+}
+.Datpj {
+    width: 50%;
+    position: relative;
+    background: var(--bs);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 10px;
+    color: var(--wh);
+}
+.Datpj:before {
+    content: 'Informacion General';
+    display: block;
+    text-align: right;
+    padding: 10px;
+font-family: var(--ftsub);
+    color: var(--pr1);
+    font-size: 2.3em;
+    box-sizing: border-box;
+    border-bottom: 1px solid;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.Datpj i {
+    display: block;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 15px;
+    font-style: normal;
+    color: var(--n6);
+    padding: 3px;
+    font-family: var(--f3);
+}
+.Datpj strong {
+    float: right;
+    color: var(--pr1);
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    font-family: var(--f3);
+}
+.firmaperfil img {
+    border-radius: 20px;
+    padding: 6px;
+    background: var(--ps2);
+
+}
+.datogeneral-pjbf {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: left;
+    box-sizing: border-box;
+}
+.Descfisic:before {
+content: 'Descripción Física';
+    display: block;
+    /* position: absolute; */
+    top: 0;
+    margin-top: 0px;
+    padding: 10px;
+    /* background: var(--pr1); */
+    font-family: var(--ftsub);
+    color: var(--pr1);
+    font-size: 2.0em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.Imgpj {
+    width: 270px;
+    height: 350px;
+    margin-top: 25px;
+}
+ .Imgpj img {
+    height: 100%;
+}
+.Descpsico:before {
+content: 'Descripción personalidad';
+    display: block;
+    /* position: absolute; */
+    top: 0;
+    margin-top: 0px;
+    padding: 10px;
+    /* background: var(--pr1); */
+    font-family: var(--ftsub);
+    color: var(--pr1);
+    font-size: 2.0em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.Descfisic img, .Descpsico img,.Histopj img{
+    max-width: 100%;
+}
+.Descfisic, .Descpsico {
+position: relative;
+    background: var(--transp2);
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 0.7rem;
+    height: 350px;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 35%;
+    line-height: 1.1em;
+    color: var(--wh);
+}
+.Historiapj-bf {
+    display: flex;
+    padding: 20px;
+    background-image: var(--fr1);
+    background-attachment: fixed;
+    background-blend-mode: luminosity;
+    background-color: var(--pr1);
+    background-position: top;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-family: var(--f4);
+    line-height: 1em;
+    height: 350px;
+}
+.Histopj {
+    width: 60%;
+    padding: 15px;
+    background: var(--n1);
+    color: var(--n6);
+    text-align: justify !important;
+    font-size: 0.75rem;
+    box-sizing: border-box;
+    overflow: auto;
+    border: 1px solid var(--n5);
+    border-radius: 20px;
+}
+.Historiapj-bf span {
+    width: 35%;
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 3.5rem;
+    font-family: var(--f5);
+    color: var(--n5);
+}
+.Historiapj-bf span i {
+    margin-top:30px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 5rem;
+    transform: rotate(45deg);
+    margin-bottom: 50px;
+    background: var(--n5);
+    color: var(--pr1) !important;
+    border-radius: 20px;
+}
+.tituloprofile-BF2 {
+    display: flex;
+    height: 1px;
+    background: var(--pr1);
+    border: 40px solid var(--n5);
+}
+.tituloprofile-BF2 span {
+    position: relative;
+    background: var(--pr1);
+    display: flex;
+    top: -20px;
+    left: -20px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    font-family: var(--f3);
+    color: var(--n5);
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: left;
+    text-transform: uppercase;
+}
+.tituloprofile-BF2 i {
+    padding: 10px;
+    background: var(--n5);
+    color: var(--pr1);
+    margin-right: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-left: -5px;
+}
+dl#field_id7 {
+    text-align: justify;
+    line-height: 1em;
+}
+dl#field_id5,dl#field_id6 {
+text-align: justify;
+    margin-top: 9px;
+    height: 280px;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+.part5p-bf {
+    height: auto;
+    display: flex;
+}
+.Level {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.exppf-bf {
+    padding: 5px 20px;
+    font-size: 0.7rem;
+    height: 120px;
+    display: grid;
+}
+.exppf-bf i{font-style:normal;}
+dl#field_id27 {
+    text-align: center;
+    font-size: 0.6rem;
+    color: var(--n6);
+    text-transform: uppercase;
+}
+dl#field_id27 strong, dl#field_id27 i {
+    display: block;
+    margin-bottom: 6px;
+}
+dl#field_id27 strong {
+    margin-top: 10px;
+    background: var(--pr1);
+    color: var(--n2);
+    padding: 5px;
+    border-radius: 10px;
+    border: 4px solid var(--n2);
+    outline: 1px solid var(--pr1);
+}    
+.exppf-bf .field_uneditable {
+    gap: 20px;
+}
+.Atributos-Ext {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 0.8rem;
+    font-family: var(--f3);
+    background: var(--n1);
+}
+dl#field_id22 {
+    padding: 20px;
+    text-align: center;
+    width: 100% !important;
+    font-size: 2rem;
+    font-family: var(--f5);
+    color: var(--n5);
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+.dividerpj-bf {
+    width: 100%;
+    float: left;
+    height: 40px;
+    background: var(--fd10);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -20px;
+    filter: grayscale(1);
+}
+.habilidad {
+    font-size: 0.7rem;
+    padding: 10px;
+    line-height: 1em;
+    font-family: var(--f4);
+    color: var(--n5);
+}
+.habilidad strong {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.habilidad i {
+    font-style: normal;
+    display: block;
+    margin: 0% 3%;
+    font-size: 0.8rem;
+    line-height: 1em;
+}
+dl#field_id16 {
+    text-align: justify;
+    font-size: 0.7rem;
+    height: 180px;
+    overflow: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+dl#field_id20 {
+    position: relative;
+    z-index: 1;
+}
+.afinidadpf-bf {
+    width: 30%;
+    background: var(--pr1);
+}
+.afipj-bf {
+    width: 200px;
+    height: 170px;
+    background: var(--n5);
+    border-bottom-left-radius: 100px;
+    float: right;
+}
+.marcolevel {
+    height: 100px;
+    width: 100px;
+    background-color: var(--pr1);
+    padding: 10px;
+    background-image: var(--msc);
+    background-position: center;
+    background-size: contain;
+    background-blend-mode: color-burn;
+    display: grid;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    font-size: 3rem;
+    font-family: var(--f5);
+    color: var(--n5);
+}
+.level {
+    padding: 10px;
+    width: 100px;
+    background: var(--n5);
+    margin: 10px;
+    height: 20px;
+    font-family: var(--f3);
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+    display: flex;
+    align-items: center;
+    color: var(--pr1);
+    border-radius: 10px;
+}
+.atributos hr {
+    display: none;
+}
+ dl#field_id15 {
+    display: flex;
+    width: 100% !important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.atributos strong {
+    display: inline-grid;
+    padding: 5px;
+    width: calc(100% / 5);
+    font-size: 0.6rem;
+    background: var(--n1);
+    border: 1px solid var(--n5);
+    border-radius: 20px;
+    margin: 3px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    text-transform: uppercase;
+}
+.atributos {
+    height: 210px;
+}
+.atributos i {
+    font-style: normal;
+    font-size: 0.6rem;
+    display: block;
+    color: var(--n6);
+}
+.atributos u {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--pr1);
+    margin-top: -10px;
+}
+.pppv {
+    padding: 10px;
+    height: 100px;
+    background: var(--n2);
+    border-radius: 20px;
+    border: 1px solid var(--n5);
+}
+.pppv:before {
+    content: 'Puntos de Combate';
+    display: block;
+    text-align: center;
+    width: 50%;
+    height: 20px;
+    float: left;
+    background: var(--n5);
+    padding: 10px;
+    margin-top: -10px;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -10px;
+    color: var(--n4);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    font-family: var(--f4);
+}
+.pppv i {
+    height: 20px;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    background: var(--n1);
+    border-radius: 20px;
+    border: 1px solid var(--n5);
+    margin: 2% 0%;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+}
+.pppv strong {
+    position: absolute;
+    left: 0;
+    font-style: normal;
+    font-size: 0.6rem;
+    color: var(--n5);
+    text-transform: uppercase;
+    font-family: var(--f3);
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+.pppv i img {
+    float: left;
+    width: 100%;
+}
+.Atributos-Ext:before {
+    content: 'Atributos';
+    display: block;
+    text-align: left;
+    font-family: var(--f5);
+    font-size: 1.5rem;
+    color: var(--pr1);
+    letter-spacing: 2px;
+    margin: 10px;
+    background: var(--n5);
+    padding: 10px;
+    border-radius: 10px;
+}
+.afipj-bf img {
+    max-width: 150px;
+}
+.part6p-bf {
+    height: 100px;
+    display: inline-flex;
+    width: 100%;
+}
+.part6p-bf .tecnicaspj-bf {
+    width: calc(80% / 4);
+    background: var(--n5);
+    font-family: var(--f5);
+    font-size: 3rem;
+    color: var(--pr1);
+    border: 1px solid;
+    transition:0.5s linear;
+}
+.part6p-bf button:hover {
+    background: var(--n1);
+}
+
+.content-tecnicas {
+    display: none;
+    position: fixed;
+    background: var(--n5);
+    color: white;
+    padding: 20px;
+    width: 450px;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    outline: 50px solid var(--n8);
+}
+.content-tecnicas dl.codebox {
+    width: 94% !important;
+    text-align: left;
+}
+.content-tecnicas span.titletec {
+    display: flex;
+    padding: 10px;
+    background: var(--n2);
+    border-radius: 10px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: var(--f5);
+    font-size: 2rem;
+    color: var(--pr1);
+}
+.content-tecnicas > div {
+    padding: 10px;
+    margin-top: 10px;
+    background: var(--pr1);
+    height: 340px;
+    border-radius: 10px;
+    overflow: auto;
+}
+.content-tecnicas .left-box {
+    float: none;
+    text-align:left!important;
+}
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tituloprofile-BF3 {
+    width: 20%;
+    font-size: 1rem;
+    font-family: var(--f5);
+    letter-spacing: 2px;
+    background: var(--pr1);
+    color: var(--n5);
+}
+.tituloprofile-BF3 .solar-icons {
+    display: flex;
+    margin-top: 10px;
+    font-size: 2rem;
+    width: 50px;
+    background: var(--n5);
+    color: var(--pr1);
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.Avatarportada-bf img {
+height: 98%;
+    width: 100%;
+    margin-top: -1px;
+    margin-left: -2px;
+    border: 3px solid var(--ps2);
+}
+.Avatarportada-bf {
+width: 21%;
+    height: 350px;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0px;
+    overflow: hidden;
+    justify-content: center;
+}
+.Navprofile-BF {
+display: flex;
+    justify-content: center;
+    height: 42px;
+    background: var(--ps2);
+    align-items: center;
+}
+.Navprofile-BF a {
+padding: 0px !important;
+    width: 200px;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    font-family: var(--fttext);
+    text-transform: uppercase;
+    color: var(--wh);
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Navprofile-BF .solar-icons {
+margin-right: 5px;
+    padding: 5px;
+    background: var(--ps2);
+    color: var(--pr1);
+    font-size: 2.9em;
+    margin-left: 10px;
+}
+.tituloprofile-BF4 {
+    padding: 30px;
+    font-family: var(--f5);
+    font-size: 1.5rem;
+    color: var(--pr1);
+    border: 1px solid var(--n5);
+    margin: 3%;
+    background: var(--n8);
+    border-radius: 20px;
+    box-shadow: -10px 10px 0px var(--pr1);
+    text-align: left;
+    letter-spacing: 10px;
+    background-image: var(--flo2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tituloprofile-BF4 i {
+    padding: 10px;
+    background: var(--n5);
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: var(--n4);
+}
+ .part7p-bf {
+    display: flex;
+}
+.relaciones {
+    display: flex;
+    margin: 30px;
+    height: 200px;
+}
+.actual {
+    width: 30%;
+    height: 200px;
+    background: var(--n8);
+    border: 1px solid var(--pr1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 1%;
+}
+.actual span {
+    display: block;
+    font-family: var(--f5);
+    color: var(--pr1);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.actual span .solar-icons {
+    position: relative;
+    font-size: 20px;
+    margin-top: -20px;
+    display: inline-block;
+    top: -20px;
+    padding: 10px;
+    background: var(--pr1);
+    border-radius: 100px;
+    color: var(--n4);
+    left: 2px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.actual .field_uneditable img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    border: 4px solid var(--n7);
+    outline: 1px solid var(--pr1);
+}
+.Avatarcouple {
+    width: 100%;
+}
+dl#field_id9,dl#field_id10 {
+    width: 100%;
+    text-align: center;
+}
+.infocouple {
+    display: block;
+    font-family: var(--f5);
+    color: var(--n4);
+    font-size: 0.9rem;
+}
+.infocouple a{
+    color: var(--pr1);
+    font-family: var(--f4);
+    letter-spacing: 3px;
+    font-size: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    border-top: 1px solid;
+    padding: 10px;
+}
+.otros {
+    padding: 10px;
+    background: var(--n7);
+    height: 181px;
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    width: 30%;
+    margin: 1% 0%;
+}
+.otros span {
+    display: block;
+    padding: 10px;
+    font-family: var(--f5);
+    color: var(--pr1);
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: var(--n8);
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.Cajaother {
+    height: 80%;
+    overflow: auto;
+    padding: 5px;
+}
+.Cajaother i {
+    display: flex;
+    padding: 5px;
+    font-size: 0.7rem;
+    font-family: var(--f4);
+    font-style: normal;
+    border: 1px solid var(--n5);
+    border-radius: 10px;
+    margin-top: 5px;
+    background: var(--n2);
+    color: var(--n6);
+    justify-content: left;
+    align-items: center;
+}
+.Cajaother .field_uneditable img {
+    float: left;
+    border-radius: 10px;
+    border: 1px solid var(--pr1);
+  margin-right: 10px;
+        max-width: 50px;
+    max-height: 50px;
+}
+.Cronologia {
+    background: var(--n8);
+    border-radius: 10px;
+    border: 1px solid var(--n5);
+    width: 40%;
+    margin: 1% 1%;
+    height: 200px;
+}
+.Cronologia span {
+    display: block;
+    font-size: 25px;
+    font-family: var(--f5);
+    padding: 10px;
+    text-align: left;
+    color: var(--pr1);
+}
+.Cronologia .solar-icons {
+    color: var(--n4);
+}
+.CajaCap {
+    height: 140px;
+    overflow: auto;
+    margin: 10px;
+    margin-top: -5px;
+    border-top: 1px solid;
+}
+.CajaCap a {
+    display: block;
+    text-decoration: none;
+    color: var(--n4);
+    text-align: left;
+    font-family: var(--f3);
+    font-size: 10px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+.CajaCap a::first-letter {
+color:var(--pr1);
+font-size:10px;
+}
+.part8p-bf {
+    display: flex;
+    background: var(--pr1);
+    height: 300px;
+    margin-top: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.cajaInve {
+    position:relative;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+.cajaInve strong {
+    font-style: normal;
+    padding: 5px 6px;
+    background: var(--n1);
+    border-radius: 10px;
+    font-size: 0.6rem;
+    font-family: var(--f4);
+    color: var(--n4);
+    position: relative;
+    left: -15px;
+    top: -5px;
+}
+ dl#field_id17 i {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}   
+.cajaInve u {
+    position: absolute;
+    width: 65px;
+    height: 56px;
+    line-height: 1em;
+    background: var(--n1);
+    left: 0;
+    font-size: 0.7rem;
+    font-family: var(--f4);
+    display: flex;
+    top: -50px;
+    border-radius: 10px;
+    font-style: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: left;
+    padding: 6px;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s linear;
+}
+.cajaInve u:hover{opacity: 1;}
+.cajaInve img {
+    padding: 5px;
+    margin: 5px;
+    background: var(--n1);
+    border-radius: 10px;
+        max-width: 50px;
+    max-height: 50px;
+}
+.cajaInve:before {
+    content: 'Inventario';
+    margin-top: -20px;
+    margin-left: -20px;
+    display: block;
+    color: var(--pr1);
+    width: 20%;
+    background: var(--n2);
+    padding: 15px;
+    height: 50px;
+    font-family: var(--f5);
+    word-wrap: break-word;
+    font-size: 1.8rem;
+    line-height: 1.4rem;
+    border-bottom-right-radius: 20px;
+}  
+.yenesuser {
+    position: absolute;
+    top: 0;
+    left: 130px;
+    display: flex;
+    margin: 2%;
+    background: var(--n1);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--n4);
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 3px solid var(--pr1);
+    outline: 1px solid var(--n4);
+    align-items: center;
+    justify-content: center;
+}
+.Yenestotal {
+    display: flex;
+  align-items: center;
+}
+dl#field_id17 {
+    height: 75%;
+    overflow: auto;
+}
+#field_id-13 {
+    padding: 5px;
+    background: var(--pr1);
+    border-radius: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    color: var(--n5);
+    letter-spacing: 0;
+}
+.yenesuser i {
+    left: 0 !important;
+    top: 0;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 1.5rem;
+    color: var(--pr1);
+}
+.titleiven {
+    margin: 1.5%;
+    height: 80%;
+    background: var(--n1);
+    padding: 10px;
+    border-radius: 10px;
+    width: 10%;
+    font-family: var(--f4);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--n4);
+    border: 5px solid var(--n8);
+    letter-spacing: 2px;
+    outline: 1px solid var(--n4);
+}
+.titleiven i {
+    display: inline-block;
+    font-size: 3rem;
+    margin-top: 55px;
+    margin-bottom: 22px;
+    background: var(--pr1);
+    padding: 10px;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+.cajainv {
+    margin: 2% 0%;
+    width: 32%;
+    height: 86%;
+    border: 1px solid var(--n5);
+    text-align: left;
+}
+dl#field_id28 {
+    float: none;
+    width: 100% !important;
+    padding: 10px;
+    background: var(--n1);
+    margin-top: 1%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--n5);
+}
+dl#field_id28 dt {
+    display: none;
+}
+dl#field_id28 dd {
+    padding: 0 !important;
+    margin: 0;
+}
+dl#field_id28 br {
+    display: none !important;
+}
+dl#field_id28 .field_uneditable strong {
+    display: inline-flex;
+    width: calc(94% / 2);
+    padding: 10px;
+    height: 30px;
+    background: var(--n2);
+    margin: 0.2%;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 0.6rem;
+    font-family: var(--f3);
+    color: var(--n6);
+}
+dl#field_id28 i {
+    font-style: normal;
+    margin-right: 10px;
+    background: var(--pr1);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--n5);
+    font-weight: bold;
+    font-family: var(--f4);
+}
+dl#field_id28:before {
+    content: 'Registro de moderacion';
+    background: var(--n5);
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 22%;
+    margin-top: -10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--n6);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-family: var(--f3);
+    text-align: center;
+    letter-spacing: 2px;
+}
+dl#field_id34 {
+background: var(--bs);
+    font-size: 0.5rem;
+    font-family: var(--fttext);
+    color: var(--pr1);
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -90px;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 40px !important;
+    letter-spacing: 2px;
+    writing-mode: sideways-lr;
+    display: flex;
+    align-items: center;
+}
+input#profile_field_13_34 {
+    width: 100% !important;
+    font-size: 0.6rem;
+    background: var(--n5);
+    color: var(--pr1);
+    border: 1px solid;
+    border-radius: 10px;
+}
+dl#field_id34 dt {
+    display: none;
+}
+dl#field_id34 dd {
+    margin: 0;
+    padding: 10px;
+}
+span.award_tooltiptext {
+    background: var(--n1);
+    color: var(--n4);
+    font-size: 0.8rem !important;
+    font-family: var(--f4) !important;
+    width: 100px;
+    line-height: 1em;
+    font-weight: 100 !important;
+}
+#toggle-mode {
+    border: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px !important;
+}
+</style>
